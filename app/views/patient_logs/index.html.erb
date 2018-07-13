@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Patient Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Fecha nac</th>
+      <th>Sexo</th>
+      <th>Especialidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @patient_logs.each do |patient_log| %>
+      <tr>
+        <td><%= patient_log.Nombre %></td>
+        <td><%= patient_log.Apellido %></td>
+        <td><%= patient_log.Fecha_Nac %></td>
+        <td><%= patient_log.Sexo %></td>
+        <td><%= patient_log.Especialidad %></td>
+        <td><%= link_to 'Show', patient_log %></td>
+        <td><%= link_to 'Edit', edit_patient_log_path(patient_log) %></td>
+        <td><%= link_to 'Destroy', patient_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Patient Log', new_patient_log_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Nombre: MyString
+  Apellidos: MyString
+  Fecha: 2018-07-13 07:43:50
+  sexo: 
+  Especialidad: 
+
+two:
+  Nombre: MyString
+  Apellidos: MyString
+  Fecha: 2018-07-13 07:43:50
+  sexo: 
+  Especialidad: 
