@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_13_131805) do
+ActiveRecord::Schema.define(version: 2018_07_13_135835) do
+
+  create_table "cita", force: :cascade do |t|
+    t.string "Name"
+    t.string "Apellido"
+    t.string "Edad"
+    t.string "Diagnostico"
+    t.string "Notas"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "doctor_logs", force: :cascade do |t|
+    t.string "Name"
+    t.string "Especialidad"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "patient_logins", force: :cascade do |t|
     t.string "Nombre"

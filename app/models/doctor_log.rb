@@ -1,0 +1,2 @@
+class DoctorLog < ApplicationRecord
+end
