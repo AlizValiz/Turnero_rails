@@ -31,10 +31,20 @@
     <%= form.text_field :Sexo %>
   </div>
 
-  <div class="field">
-    <%= form.label :Especialidad %>
-    <%= form.text_field :Especialidad %>
-  </div>
+  <div class="form-group"><select class="combobox form-control" name="inline">
+    <option selected="selected" value="">Especialidad...</option>
+    <option value="E_AP">ANATOMIA PATOLOGICA</option>
+    <option value="E_AAR">ANESTESIA ANALGESIA Y REANIMACION	</option>
+    <option value="E_CGR">CIRUGIA GENERAL	REANIMACION	</option>
+    <option value="E_GO">GINECOLOGIA Y OBSTETRICIA</option>
+    <option value="E_MF">MEDICINA FAMILIAR</option>
+    <option value="E_MI">MEDICINA INTERNA</option>
+    <option value="E_MPI">MEDICINA POR IMÁGENES</option>
+    <option value="E_N">NEUROCIRUGIA</option>
+    <option value="E_OYT">ORTOPEDIA Y TRAUMATOLOGIA </option>
+    <option value="E_PED">PEDIATRIA</option>
+    
+  </select></div>
 
   <div class="actions">
     <%= form.submit %>
